@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -42,17 +43,6 @@
         
         <div class="header_block header_block__nav">
             <nav class="container block_nav__border">
-                <div class="nav_element"><a href="">Новинки</a></div>
-                <div class="nav_element"><a href="">Роллы</a></div>
-                <div class="nav_element"><a href="">Суши</a></div>
-                <div class="nav_element"><a href="">Десерты</a></div>
-                <div class="nav_element"><a href="">Закуски</a></div>
-                <div class="nav_element"><a href="">Наборы</a></div>
-                <div class="nav_element"><a href="">Поке и боулы</a></div>
-                <div class="nav_element"><a href="">Воки</a></div>
-                <div class="nav_element"><a href="">Авторское</a></div>
-                <div class="nav_element"><a href="">Онигири</a></div>
-                <div class="nav_element"><a href="">Топпинги</a></div>
             </nav>
         </div>      
 
@@ -69,7 +59,25 @@
 
         
     </header>
-
-      
+<script>
+    let baseUrl = 'https://raw.githubusercontent.com/saddscrin/assets/main/products.json'
+    let categoryList = fetch(baseUrl)
+    .then(response => response.json())
+    .then(data => {
+        setNavLinks(data);
+    });
+    
+    function setNavLinks(data) {
+        let navBlock = document.querySelector('.block_nav__border');
+        if(navBlock) {
+            Object.entries(data).forEach(item => {
+                if (item[1].status == true) {
+                    let navElenet = `<div class="nav_element"><a href="">${item[1].name}</a></div>`;
+                    navBlock.innerHTML += navElenet;
+                }
+            })
+        }
+    }
+</script>
 </body>
 </html>
