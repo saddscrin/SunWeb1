@@ -21,6 +21,8 @@ ol[class] {
   padding: 0;
 }
 
+
+
 /* Убираем внешние отступы */
 body,
 h1,
@@ -153,6 +155,8 @@ header{
 
 }
 
+/* Выравнивание картинок */
+
 .windows_right{
     height: 42px;
     display: flex;
@@ -161,11 +165,9 @@ header{
     margin-right: 25;
 }
 
-
 .windows_left > img{
     margin-right: 28px;
 }
-
 
 .windows_left > img:nth-last-child(2) {
     margin-right: 25px;
@@ -185,6 +187,9 @@ header{
 .windows_right > img:nth-child(3){
   margin-right: 27px;
 }
+
+/* Header блоки */
+
 .header_block{
     width: 100%;
     height: 54px;
@@ -224,28 +229,28 @@ header{
     height: 52px;
     overflow-x: auto;
     white-space: nowrap;
-    font-family: 'Value Sans Pro';
-    
-    
-
-
+    font-family: ValueSansPro;
 }
 
 .block_nav__second_border::-webkit-scrollbar{
   display: none;
 
 }
+
+/* Элементы блоков */
+
 .nav_element {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+   
 }
+
 
 .nav_element a {
     text-decoration: none;
     color: #274646;
-    font-family: 'Value Sans Pro';
+    font-family: ValueSansPro;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -276,7 +281,7 @@ header{
 }
 
 .nav_button_element a{
-    font-family: 'Value Sans Pro';
+    font-family: ValueSansPro;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -319,10 +324,83 @@ header{
   
 }
 
-
 .shadow{
   box-shadow: 0px 0px 4px #E9E6E6(0, 0, 0, 0.15);
 }
+
+/* Main content styles */
+
+
+.main_content {
+  padding-top: 106px;
+}
+
+/* Блок с карточками */
+
+
+.cards_block__elements{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.cards_block{
+  padding: 20px;
+  overflow-x: auto;
+
+}
+.card {
+  
+  border: 3px solid #FFBEC9;
+  border-radius: 16px; 
+}
+
+/* Скролл-лента РОЛЛЫ */
+
+.rolls_tape{
+  background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
+  position: static;
+  width: 100%;
+  height: 196px;
+  
+  
+}
+
+.block_rolls_tape_elements{
+padding-top: 48px;
+
+}
+
+.rolls_text{
+  font-size: 80px;
+  font-family: RimmaSans;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFD8E1;
+  
+}
+
+
+
+.rolls_text_elements{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll ;
+  white-space: nowrap;
+  gap: 176px;
+}
+
+.rolls_text_elements::-webkit-scrollbar{
+  
+  display: none;
+}
+
 
 /* Добавление медиазапросов*/
 
@@ -364,20 +442,18 @@ header{
     .container {
         max-width: 720px;
     }
-    .windows_left > img{
-      margin-right: 28px;
-  
-    }
-    .windows_right {
-      display: flex;
-    }
     .logophone{
       display: none;
     }
     .hidedlogo{
       display: flex;
     }
-    
+    .windows_right {
+      display: flex;
+  }
+  .windows_left{
+    width: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -390,10 +466,17 @@ header{
     .hidedlogo{
       display: flex;
     }
-    .windows_left{
-      width: auto;
+    .windows_right {
+      display: flex;
     }
-}
+  .windows_left{
+    width: 100%;
+  }
+  .windows_left{
+    width: auto;
+  }
+  }
+
 
 @media (min-width: 1280px) {
     .container {
@@ -411,29 +494,17 @@ header{
     .windows_left{
       width: auto;
     }
-}
-
-@media (min-width:1400px) {
-
     .container {
       max-width: 1320px;
     }
     .hidedlogo{
       display: flex;
     }
-
-    .windows_left{
-      width: auto;
-    }
-
+    .windows_right {
+      display: flex;
+  }
     .leftside > img:nth-child(4) {
       margin-right: 28px;
-      margin-left: 0px; 
-    }
-
-    .leftside > img:nth-child(1) {
-      margin-right: 27px;
-      margin-left: 16px;
     }
 
     .leftside > img:nth-child(3) {
@@ -451,6 +522,31 @@ header{
     .leftside > img:nth-child(2) {
       margin-right: 23px;
     }
-  
 }
+
+/* Шрифты */
+   
+@font-face {
+    font-family: RimmaSans;
+    src: url(fonts/rimma-sans-bold.ttf);
+}
+
+@font-face {
+  font-family: ValueSansPro;
+  src: url(fonts/ValueSansPro-Bold.ttf) ;
+ 
+}
+
+@font-face {
+  font-family: ValueSansPro;
+  src: url(fonts/ValueSansPro-Bold.eot);
+ 
+}
+
+@font-face {
+  font-family: ValueSansPro;
+  src: url(fonts/ValueSansPro-Bold.woff);
+}
+
+
 
