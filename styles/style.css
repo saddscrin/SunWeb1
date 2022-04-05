@@ -208,7 +208,7 @@ header{
 
 .block_nav__border {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
     border-bottom: 1px solid #E5E5E5;
     align-items: stretch;
