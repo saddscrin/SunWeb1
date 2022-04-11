@@ -474,8 +474,6 @@ padding-top: 46px;
 
 /* Блок с товарами > суши */
 
-
-
 .rollicon_heading{
   font-family: ValueSansPro_mid;
   font-style: normal;
@@ -483,73 +481,21 @@ padding-top: 46px;
   font-size: 32px;
   line-height: 32px;
   color: #274646;
+  margin-top: 64px;
+  margin-bottom: 32px;
 }
 
-.rollicon_second_heading{
-
+.textin_grid{
   font-family: ValueSansPro_mid;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 33px;
-  color: #274646;
-}
+  color: #6B6B6B;
+  }  
 
-.rollicons{
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
-  column-gap: 1rem;
-  row-gap: 2rem;
-
-}
-.second_rollicons{
-  display: grid;
-  grid-template-columns: auto;
-  column-gap: 1rem;
-  row-gap: 2rem;
-  margin-top: 79px;
-}
-
-.property_icons{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-}
-
-.rollicon_img{
-  height: 320px;
-  position: relative;
-  padding: 0px 16px;
-}
-
-.property_icons{
-  position: absolute;
-}
-
-.order_details{
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 28px;
-
-}
- 
-
-.textin_grid{
-font-family: ValueSansPro_mid;
-font-style: normal;
-font-weight: 500;
-color: #6B6B6B;
-}
-.rollsname{
-  font-size: 16px;
-}
 .price1{
-  font-family: ValueSansPro_mid;
+  font-family: ValueSansPro_reg;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
   text-decoration-line: line-through;
   color: #A0A0A0;
   margin-right: 8px;
@@ -557,7 +503,7 @@ color: #6B6B6B;
 }
 
 .price2{
-  font-family: ValueSansPro_reg;
+  font-family: ValueSansPro_mid;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -569,23 +515,38 @@ color: #6B6B6B;
   border-radius: 46px;
 }
 
-
-.amount{
-  font-family: ValueSansPro_reg;
-  font-size: 14px;
+.amount {
+  font-family: 'ValueSansPro_reg';
 }
-.sushi_info{
+.product_card{
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.property_icons {
   display: flex;
-  justify-content: flex-end;
+  gap: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
-.order_details{
- align-items: center;
+.product_icon{
+  position: relative;
+}
+
+.order_details {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
+  align-items: center;
 }
 
 
+.heading{
+
+}
 
 /* Добавление медиазапросов*/
 
@@ -623,19 +584,23 @@ color: #6B6B6B;
 .windows_left{
   width: 100%;
 }
-.rollicons {
-  display: grid;
-  grid-template-columns: auto;
-  column-gap: 1rem;
-  row-gap: 2rem;
-  margin-top: 48px;
-}
+
 .second_rollicons {
   display: grid;
   grid-template-columns: repeat(1, 6fr);
   column-gap: 1rem;
   row-gap: 2rem;
 
+}
+
+.product_card {
+  display: grid;
+  grid-template-columns: repeat(1,6fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+.container{
+  width: auto;
 }
 }
 
@@ -660,13 +625,7 @@ color: #6B6B6B;
 width: auto;
 }
 
-.rollicons {
-    display: grid;
-    grid-template-columns: repeat(2, 4fr);
-    column-gap: 1rem;
-    row-gap: 2rem;
-    margin-top: 48px;
-}
+
 .second_rollicons {
   display: grid;
   grid-template-columns: repeat(2, 4fr);
@@ -674,8 +633,16 @@ width: auto;
   row-gap: 2rem;
 
 }
+.product_card {
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
 }
-
+.container{
+  width: 1400px;
+}
+}
 @media (min-width: 992px){
 
 .container {
@@ -701,19 +668,22 @@ width: auto;
 .windows_left{
   width: auto;
 }
-.rollicons {
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
-  column-gap: 1rem;
-  row-gap: 2rem;
-  margin-top: 48px;
-}
+
 .second_rollicons{
   display: grid;
   grid-template-columns: repeat(4, 3fr);
   column-gap: 1rem;
   row-gap: 2rem;
 
+}
+.product_card {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+.container{
+  width: 1400px;
 }
 }
 
@@ -768,19 +738,22 @@ width: auto;
 .leftside > img:nth-child(2){
   margin-right: 23px;
 }
-.rollicons {
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
-  column-gap: 0rem;
-  row-gap: 2rem;
-  margin-top: 48px;
-}
+
 .second_rollicons{
   display: grid;
   grid-template-columns: repeat(4, 3fr);
   column-gap: 0rem;
   row-gap: 2rem;
 
+}
+.product_card {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+.container{
+  width: 1400px;
 }
 }
 /* Шрифты */
