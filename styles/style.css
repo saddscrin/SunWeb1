@@ -485,8 +485,18 @@ padding-top: 46px;
   margin-bottom: 62px;
 }
 
+.first_rolls_section {
+  margin-top: 64px;
 
+}
 
+h1.first_section_heading {
+  margin-bottom: 32px;
+}
+
+section.second_rolls_section {
+  margin-top: 64px;
+}
 
 .first_section_heading{
   font-family: ValueSansPro_mid;
@@ -495,8 +505,7 @@ padding-top: 46px;
   font-size: 32px;
   line-height: 32px;
   color: #274646;
-  margin-top: 64px;
-  margin-bottom: 32px;
+
 }
 
 .textin_grid{
