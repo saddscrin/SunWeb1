@@ -474,7 +474,21 @@ padding-top: 46px;
 
 /* Блок с товарами > суши */
 
-.rollicon_heading{
+.second_section_heading{
+  font-family: ValueSansPro_mid;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #274646;
+  margin-top: 44px;
+  margin-bottom: 62px;
+}
+
+
+
+
+.first_section_heading{
   font-family: ValueSansPro_mid;
   font-style: normal;
   font-weight: 500;
@@ -518,11 +532,18 @@ padding-top: 46px;
 .amount {
   font-family: 'ValueSansPro_reg';
 }
-.product_card{
+.product_cards {
   display: grid;
   grid-template-columns: repeat(4, 3fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
+  row-gap: 24px;
+  column-gap: 32px;
+
+}
+
+.product_card:hover{
+border: 2px solid #F7F7F7;
+border-radius: 8px;
+
 }
 
 .property_icons {
@@ -533,7 +554,14 @@ padding-top: 46px;
   left: 0px;
 }
 
-.product_icon{
+.product_card{
+position: relative;
+padding: 16px;
+}
+
+
+.product_img {
+  width: auto;
   position: relative;
 }
 
@@ -548,106 +576,131 @@ padding-top: 46px;
 
 }
 
-/* Добавление медиазапросов*/
 
-@media (min-width: 0px){
+/* media                  */
 
-.container {
-  max-width: 576px;
+@media (max-width: 575px) {
+  .container {
+      padding: 0 0.75rem;
+  }
+
+  .hidedlogo{
+    display: none;
+  }
+  
+  .windows_right {
+    display: none;
+  }
+  
+  .image{
+    display: flex;
+  }
+  
+  .hided{
+    display: none;
+  }
+  
+  .header_block {
+    display:flex ;
+    flex-wrap: wrap;
+  }
+  
+  .logophone{
+    display: flex;
+  }
+  
+  .windows_left{
+    width: 100%;
+  }
+  
+  .second_rollicons {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+  
+  }
+  
 }
 
-.hidedlogo{
-  display: none;
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+  .hidedlogo{
+    display: none;
+  }
+  
+  .windows_right {
+    display: none;
+  }
+  
+  .image{
+    display: flex;
+  }
+  
+  .hided{
+    display: none;
+  }
+  
+  .header_block {
+    display:flex ;
+    flex-wrap: wrap;
+  }
+  
+  .logophone{
+    display: flex;
+  }
+  
+  .windows_left{
+    width: 100%;
+  }
+  
+  .second_rollicons {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+  
+  }
 }
 
-.windows_right {
-  display: none;
-}
-
-.image{
-  display: flex;
-}
-
-.hided{
-  display: none;
-}
-
-.header_block {
-  display:flex ;
-  flex-wrap: wrap;
-}
-
-.logophone{
-  display: flex;
-}
-
-.windows_left{
-  width: 100%;
-}
-
-.second_rollicons {
-  display: grid;
-  grid-template-columns: repeat(1, 6fr);
-  column-gap: 1rem;
-  row-gap: 2rem;
-
-}
-
-.product_card {
-  display: grid;
-  grid-template-columns: repeat(1,6fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
-}
-.container{
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+  .logophone{
+    display: none;
+  }
+  
+  .hidedlogo{
+    display: flex;
+  }
+  
+  .windows_right {
+    display: flex;
+  }
+  
+  .windows_left{
   width: auto;
-}
-}
-
-@media (min-width: 768px){
-.container {
-  max-width: 720px;
-}
-
-.logophone{
-  display: none;
-}
-
-.hidedlogo{
-  display: flex;
-}
-
-.windows_right {
-  display: flex;
-}
-
-.windows_left{
-width: auto;
-}
-
-
-.second_rollicons {
-  display: grid;
-  grid-template-columns: repeat(2, 4fr);
-  column-gap: 1rem;
-  row-gap: 2rem;
+  }
+  
+  
+  .second_rollicons {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+  
+  }
 
 }
-.product_card {
-  display: grid;
-  grid-template-columns: repeat(2, 6fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
-}
-.container{
-  width: 1400px;
-}
-}
-@media (min-width: 992px){
 
-.container {
-  max-width: 960px;
-}
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+
 
 .logophone{
   display: none;
@@ -676,86 +729,126 @@ width: auto;
   row-gap: 2rem;
 
 }
-.product_card {
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
+
 }
-.container{
-  width: 1400px;
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+  .hided{
+    display: flex;
+  }
+  
+  .logophone{
+    display: none;
+  }
+  
+  .hidedlogo{
+    display: flex;
+  }
+  
+  .windows_left{
+    width: auto;
+  }
+  
+  .container{
+    max-width: 1320px;
+  }
+  
+  .hidedlogo{
+    display: flex;
+  }
+  
+  .windows_right{
+    display: flex;
+  }
+  
+  .leftside > img:nth-child(4){
+    margin-right: 28px;
+  }
+  
+  .leftside > img:nth-child(4){
+    margin-right: 23px;
+    margin-left: 0px;
+  }
+  
+  .windows_right > img:nth-child(3){
+    margin-right: 15px;
+  }
+  
+  .leftside > img:nth-child(2){
+    margin-right: 23px;
+  }
+  
+  .second_rollicons{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    column-gap: 0rem;
+    row-gap: 2rem;
+  
+  }
 }
+
+@media (min-width:1400px) {
+  .container {
+      max-width: 1320px;
+  }
+  .hided{
+    display: flex;
+  }
+  
+  .logophone{
+    display: none;
+  }
+  
+  .hidedlogo{
+    display: flex;
+  }
+  
+  .windows_left{
+    width: auto;
+  }
+  
+  .container{
+    max-width: 1320px;
+  }
+  
+  .hidedlogo{
+    display: flex;
+  }
+  
+  .windows_right{
+    display: flex;
+  }
+  
+  .leftside > img:nth-child(4){
+    margin-right: 28px;
+  }
+  
+  .leftside > img:nth-child(4){
+    margin-right: 23px;
+    margin-left: 0px;
+  }
+  
+  .windows_right > img:nth-child(3){
+    margin-right: 15px;
+  }
+  
+  .leftside > img:nth-child(2){
+    margin-right: 23px;
+  }
+  
+  .second_rollicons{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    column-gap: 0rem;
+    row-gap: 2rem;
+  
+  }
 }
 
 
-@media (min-width: 1280px){
-
-.container{
- max-width: 1250px;
-}
-
-.hided{
-  display: flex;
-}
-
-.logophone{
-  display: none;
-}
-
-.hidedlogo{
-  display: flex;
-}
-
-.windows_left{
-  width: auto;
-}
-
-.container{
-  max-width: 1320px;
-}
-
-.hidedlogo{
-  display: flex;
-}
-
-.windows_right{
-  display: flex;
-}
-
-.leftside > img:nth-child(4){
-  margin-right: 28px;
-}
-
-.leftside > img:nth-child(4){
-  margin-right: 23px;
-  margin-left: 0px;
-}
-
-.windows_right > img:nth-child(3){
-  margin-right: 15px;
-}
-
-.leftside > img:nth-child(2){
-  margin-right: 23px;
-}
-
-.second_rollicons{
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
-  column-gap: 0rem;
-  row-gap: 2rem;
-
-}
-.product_card {
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
-}
-.container{
-  width: 1400px;
-}
-}
 /* Шрифты */
    
 @font-face {
