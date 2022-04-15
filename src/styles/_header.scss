@@ -5,6 +5,7 @@ header {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     position: fixed;
     z-index: 1;
+
   }
   
   .container {
@@ -91,7 +92,7 @@ header {
   
   .adressname {
     text-decoration: none;
-    font-family: "ValueSansPro";
+    font-family: ValueSansPro;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -101,7 +102,7 @@ header {
   
   .phonenumber {
     text-decoration: none;
-    font-family: "ValueSansPro";
+    font-family: ValueSansPro;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -112,7 +113,7 @@ header {
   
   .Shiminginame {
     text-decoration: none;
-    font-family: "ValueSansPro";
+    font-family: ValueSansPro;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -122,7 +123,7 @@ header {
   
   .price {
     text-decoration: none;
-    font-family: "ValueSansPro";
+    font-family: ValueSansPro;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -173,6 +174,11 @@ header {
     height: 52px;
   }
   
+  .header_block__second__nav {
+    background-color: #FFFFFF;
+    height: 52px;
+  }
+
   .block_nav__border {
     display: flex;
     justify-content: flex-start;
@@ -232,11 +238,7 @@ header {
     justify-content: flex-start;
   }
   
-  .block_nav__second_border {
-    display: none;
-    height: 52px;
-  }
-  
+
   .nav_button_element a {
     font-family: ValueSansPro;
     font-style: normal;

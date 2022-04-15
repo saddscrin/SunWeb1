@@ -1,14 +1,18 @@
 import scss from 'rollup-plugin-scss'
+import { terser } from 'rollup-plugin-terser';
 
 export default {
     input: 'src/js/main.js',
-    output: {
+    output:  {
         file: 'main.min.js',
-        format: 'esm'
+        format: 'es',
+      plugins: [terser(
+      )]
     },
     plugins: [
         scss({
-            output: "style.css",
+            output: "style.min.css",
+            outputStyle: "compressed",
             failOnError: true,
             runtime: require("sass"),
         }),
