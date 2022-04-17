@@ -98,17 +98,15 @@
 }
 /* Анимация для бегущей строки */
 .rolls_tape_text {
-  width: 128px;
-  height: 128px;
   position: relative;
   left: 0;
-  animation-name: myAnimation;
-  animation-duration: 1s;
+  animation-name: ticker;
+  animation-duration: 5s;
   animation-timing-function: linear ;
   animation-iteration-count: infinite;
 }
 
-@keyframes myAnimation {
+@keyframes ticker {
   from {
       left: 100px;
   }
@@ -117,17 +115,15 @@
   }
 }
 .second_rolls_tape_text {
-  width: 128px;
-  height: 128px;
   position: relative;
   left: 0;
-  animation-name: myAnimation;
-  animation-duration: 1s;
+  animation-name: ticker;
+  animation-duration: 5s;
   animation-timing-function: linear ;
   animation-iteration-count: infinite;
 }
 
-@keyframes myAnimation {
+@keyframes ticker {
   from {
       left: 100px;
   }
@@ -137,17 +133,15 @@
 }
 
 .third_rolls_tape_text {
-  width: 128px;
-  height: 128px;
   position: relative;
   left: 0;
-  animation-name: myAnimation;
-  animation-duration: 1s;
+  animation-name: ticker;
+  animation-duration: 5s;
   animation-timing-function: linear ;
   animation-iteration-count: infinite;
 }
 
-@keyframes myAnimation {
+@keyframes ticker {
   from {
       left: 100px;
   }
@@ -157,7 +151,7 @@
 }
 /*  Анимация для бегущей строки */
 
-/* Блок с товарами > суши */
+/* Блок с карточками товара */
 
 .second_section_heading {
   font-family: ValueSansPro_mid;
@@ -170,6 +164,10 @@
   margin-bottom: 62px;
 }
 
+button.price2:hover {
+  background: #274646;
+  color: white;
+}
 
 .first_category_section {
   margin-top: 64px;
@@ -271,5 +269,7 @@ section.second_rolls_section {
 .product_card {
   border-bottom: 1px solid #E5E5E5;
 }
+
+// блок с карточками товара 
 
 /* main content */
