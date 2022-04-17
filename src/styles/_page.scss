@@ -1,0 +1,273 @@
+/* Main content  */
+
+
+.main_content {
+  padding-top: 158px;
+}
+
+/* Блок с карточками */
+
+
+.cards_block__elements {
+  display: flex;
+
+  align-items: center;
+  gap: 17px;
+}
+
+.cards_block {
+  overflow-x: auto;
+  padding: 20px 0px 37px 0em;
+}
+
+.card {
+  border: 3px solid #FFBEC9;
+  border-radius: 16px;
+}
+
+/* Скролл-лента РОЛЛЫ */
+
+.first_rolls_tape {
+  background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
+  position: static;
+  width: 100%;
+  height: 60px;
+}
+
+.second_rolls_tape {
+  background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%);
+  position: static;
+  width: 100%;
+  height: 60px;
+}
+
+.third_rolls_tape {
+  background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
+  position: static;
+  width: 100%;
+  height: 60px;
+}
+
+.block_rolls_tape_elements {
+  padding-top: 46px;
+}
+
+.rolls_tape_text {
+  font-size: 60px;
+  font-family: RimmaSans;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFD8E1;
+}
+
+.second_rolls_tape_text {
+  font-size: 60px;
+  font-family: RimmaSans;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFE091;
+}
+
+.third_rolls_tape_text {
+  font-size: 60px;
+  font-family: RimmaSans;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #006666;
+}
+
+.rolls_text_elements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 176px;
+}
+
+.rolls_text_elements::-webkit-scrollbar {
+  display: none;
+}
+/* Анимация для бегущей строки */
+.rolls_tape_text {
+  position: relative;
+  left: 0;
+  animation-name: ticker;
+  animation-duration: 5s;
+  animation-timing-function: linear ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ticker {
+  from {
+      left: 100px;
+  }
+  to {
+      left: 100%;
+  }
+}
+.second_rolls_tape_text {
+  position: relative;
+  left: 0;
+  animation-name: ticker;
+  animation-duration: 5s;
+  animation-timing-function: linear ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ticker {
+  from {
+      left: 100px;
+  }
+  to {
+      left: 100%;
+  }
+}
+
+.third_rolls_tape_text {
+  position: relative;
+  left: 0;
+  animation-name: ticker;
+  animation-duration: 5s;
+  animation-timing-function: linear ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ticker {
+  from {
+      left: 100px;
+  }
+  to {
+      left: 100%;
+  }
+}
+/*  Анимация для бегущей строки */
+
+/* Блок с товарами > суши */
+
+button.price2:hover {
+  background: #274646;
+  color: #fff;
+}
+.second_section_heading {
+  font-family: ValueSansPro_mid;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #274646;
+  margin-top: 44px;
+  margin-bottom: 62px;
+}
+
+
+.first_category_section {
+  margin-top: 64px;
+
+}
+
+.second_category_section {
+  margin-top: 64px;
+}
+
+h1.first_section_heading {
+  margin-bottom: 32px;
+}
+
+section.second_rolls_section {
+  margin-top: 64px;
+}
+
+.first_section_heading {
+  font-family: ValueSansPro_mid;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #274646;
+
+}
+
+.textin_grid {
+  font-family: ValueSansPro_mid;
+  font-style: normal;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+
+.price1 {
+  font-family: ValueSansPro_reg;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: line-through;
+  color: #A0A0A0;
+  margin-right: 8px;
+
+}
+
+.price2 {
+  font-family: ValueSansPro_mid;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #274646;
+  background: #E9E6E6;
+  padding: 12px 14px;
+  border: 46px;
+  border-radius: 46px;
+}
+
+.amount {
+  font-family: 'ValueSansPro_reg';
+}
+
+.product_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  row-gap: 24px;
+  column-gap: 32px;
+
+}
+
+.product_card:hover {
+  outline: 2px solid #F7F7F7;
+  border-radius: 8px 8px;
+}
+
+.property_icons {
+  display: flex;
+  gap: 8px;
+  top: 0px;
+  left: 0px;
+}
+
+.product_card {
+  padding: 16px;
+}
+
+
+.product_img {
+  width: auto;
+  height: auto;
+}
+
+.order_details {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.product_card {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+/* main content */
